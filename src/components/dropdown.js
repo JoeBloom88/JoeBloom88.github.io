@@ -11,13 +11,14 @@ const Dropdown = ({items, activatorText}) => {
       const[openState, setOpenState] = useState(false)
       
       const onButtonClick = () =>{
-    
+
+        
 
       }
       return (
         
         <nav className={style.navSmall}>
-            <h1 className={style.dropDownTitle} onClick={()  =>setOpenState(!openState)}> {activatorText}</h1>
+            <h1 role="button" aria-pressed={openState} className={style.dropDownTitle} onClick={()  => {setOpenState(!openState); onButtonClick();}}> {activatorText}</h1>
           {openState && <ul className={style.dropDownMenu}>
             {items.map((item) => (
                 <li key={item.fieldValue}>
