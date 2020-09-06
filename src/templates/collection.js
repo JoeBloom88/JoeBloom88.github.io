@@ -39,15 +39,17 @@ const CollectionIndex = ({data, pageContext}) => {
                 <div className={style.mobileView}>
                   {collection.map(({ node }, index )=> (
                       <>
-                      <div className={style.mobileMediaContainer}>
-                          {/* <Img fixed={node.image.fixed} alt={node.description}/> */}
-                          {/* <Img className={style.fluidImg} fluid={node.image.fluid} alt={node.description} style={{'height':'92vh'}} imgStyle={{'margin':'50px', objectFit: 'contain', 'height':'100%'}} /> */}
-                          {node.filmEmbedLink != null && <Video className={style.videoFrame} videoSrcURL={node.filmEmbedLink} videoPlaceholderImage={node.filmCoverImage} />}
-                          {node.image != null && <Img fluid={node.image.fluid} alt={node.description} style={{'height':'100%'}}  imgStyle={{objectFit: 'contain', 'height':'100%'}} /> }
+                      <div className={style.mediaItem} >
+                        <div className={style.mobileMediaContainer}>
+                            {/* <Img fixed={node.image.fixed} alt={node.description}/> */}
+                            {/* <Img className={style.fluidImg} fluid={node.image.fluid} alt={node.description} style={{'height':'92vh'}} imgStyle={{'margin':'50px', objectFit: 'contain', 'height':'100%'}} /> */}
+                            {node.filmEmbedLink != null && <Video className={style.videoFrame} videoSrcURL={node.filmEmbedLink} videoPlaceholderImage={node.filmCoverImage} />}
+                            {node.image != null && <Img fluid={node.image.fluid} alt={node.description} style={{'height':'100%'}}  imgStyle={{objectFit: 'contain', 'height':'100%'}} /> }
 
+                            
                           
-                          <h2> {node.postTitle} | {node.description} </h2>
-                         
+                        </div>
+                        <h2> {node.postTitle} | {node.description} </h2>
                       </div>
                       
                       </>

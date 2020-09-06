@@ -3,3 +3,8 @@
     text-decoration: none;
 }
 
+.siteHeader {
+    overflow-x: visible;
+    min-width: 150px;
+}
+
