@@ -27,13 +27,26 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               }
             }
           }
+        
       }
     `)
     if (queryResult.errors) {
       reporter.panic("error loading events", queryResult.errors)
       return
     }
-  
+    // // Generate single post pages
+    // const about = queryResult.data.aboutPageQuery.nodes[0]
+    // about.forEach(about => {
+    //   createPage({
+    //     path:"/about",
+    //     component: path.resolve(`./src/templates/about.js`),
+    //     context: {
+    //       // Data passed to context is available
+    //       // in page queries as GraphQL variables.
+    //       slug: "/about",
+    //     },
+    //   })
+    // })
     // // Generate single post pages
     // const posts = queryResult.data.postQuery.edges
     // posts.forEach(post => {

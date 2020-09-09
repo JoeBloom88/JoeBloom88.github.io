@@ -5,7 +5,7 @@ import Dropdown from './dropdown'
 
 import style from "./navigation.module.css"
 
-const MainNav = ({ menuLinks }) => {
+const MainNav = ({ menuLinks, externalLinks }) => {
   return (
     <>
     <nav className={style.navMain}>
@@ -15,9 +15,17 @@ const MainNav = ({ menuLinks }) => {
             <Link to={`/${_.kebabCase(props.fieldValue)}`} className={style.navItem}>{props.fieldValue}</Link>
           </li>
         ))}
+        {externalLinks.map(props => (
+          <li key={props.name}>
+            <Link external to={props.url} className={style.navItem}>{props.name}</Link>
+          </li>
+        ))}
+        <li key="about">
+          <Link to={'/about'} className={style.navItem}>About</Link>
+        </li>
       </ul>
     </nav>
-    <Dropdown items={menuLinks} activatorText='menu'/>
+    <Dropdown items={menuLinks} externalLinks={externalLinks} activatorText='menu'/>
     
     </>
 

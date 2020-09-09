@@ -1,0 +1,15 @@
+@media screen and (--viewport-narrow-max) {
+    .siteFooter{
+        display: flex;
+        justify-content: center;
+    }
+
+  }
+    /* media query for large screen? make footer dissapear  */
+  @media screen and (--viewport-narrow-min) {
+    .siteFooter {
+      display: none;
+     }
+  }
+
+

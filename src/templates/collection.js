@@ -49,7 +49,8 @@ const CollectionIndex = ({data, pageContext}) => {
                             
                           
                         </div>
-                        <h2> {node.postTitle} | {node.description} </h2>
+                        <h2> {node.postTitle} | {node.description}</h2>
+                        <h2> {node.year} </h2>
                       </div>
                       
                       </>
@@ -106,6 +107,7 @@ export const query = graphql`
             edges {
               node {
                 description
+                year
                 postTitle
                 slug
                 filmEmbedLink

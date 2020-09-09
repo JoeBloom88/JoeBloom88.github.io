@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 import MainNav from "./navigation"
 
 // Styles
@@ -38,6 +39,12 @@ const Layout = ({ children}) => {
           fieldValue
         }
       }
+      externalLinksQuery: allContentfulExternalLink {
+        nodes {
+          name
+          url
+        }
+      }
     }
     
   `)
@@ -47,9 +54,12 @@ const Layout = ({ children}) => {
       <div className={style.mainDiv}>
         <header>
           <Header siteTitle={data.site.siteMetadata.title} />
-          <MainNav menuLinks={data.allContentfulPost.group} />
+          <MainNav menuLinks={data.allContentfulPost.group} externalLinks={data.externalLinksQuery.nodes}/>
         </header>
         <main>{children}</main>
+        <footer>
+          <Footer siteTitle={data.site.siteMetadata.title}>  </Footer>
+        </footer>
       </div> 
       
     </>
