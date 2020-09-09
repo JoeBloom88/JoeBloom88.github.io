@@ -31,7 +31,7 @@ const CollectionIndex = ({data, pageContext}) => {
                           {/* <Img className={style.fluidImg} fluid={node.image.fluid} alt={node.description} style={{'height':'92vh'}} imgStyle={{'margin':'50px', objectFit: 'contain', 'height':'100%'}} /> */}
 
                       </div>
-                      <Pagination title={node.postTitle} description={node.description2} pageContext={pageContext} />
+                      <Pagination title={node.postTitle} description={node.description} pageContext={pageContext} />
                       </>
                   ))
                   }
@@ -74,7 +74,7 @@ export const query = graphql`
         ) {
           edges {
             node {
-              description2
+              description
               postTitle
               collection
               slug
@@ -104,7 +104,7 @@ export const query = graphql`
           ) {
             edges {
               node {
-                description2
+                description
                 postTitle
                 slug
                 filmEmbedLink
