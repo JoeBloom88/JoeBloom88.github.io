@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import style from "./pagination.module.css"
 
-const Pagination = ({ pageContext, title, description }) => {
+const Pagination = ({ pageContext, title, description,year }) => {
   const { previousPagePath, nextPagePath } = pageContext
   
   return (
@@ -11,6 +11,7 @@ const Pagination = ({ pageContext, title, description }) => {
       <div className={style.pagenav__item}>
         <h1>{title}</h1>
         <h2>{description}</h2>
+        <h2>{year}</h2>
         <div className={style.buttonContainer}>
           <Link to={previousPagePath}> prev </Link>
           /
