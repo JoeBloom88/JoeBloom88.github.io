@@ -1,7 +1,7 @@
 .container{
-    position: relative;
+    /* position: relative; */
     /* height: 100vh; */
-    display: block;
+    /* display: block;
     float: left;
     width: 100%;
     height: 100%;
@@ -9,11 +9,21 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    overflow: scroll;
+    overflow: scroll; */
+    height: fit-content;
+    /* width:100%; */
+    position: relative;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 50px; /* Specifying Column Gap */
+    margin: 50px;
   }
 
 .slide{
-    padding: 50px;
+    /* padding: 50px; */
     /* display: flex;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
@@ -30,3 +40,18 @@
     max-width: 25vw;
     
 }
+
+@media screen and (--viewport-narrow-max) {
+    .container{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    .contactDetails{
+        position: relative; 
+        background-color: none;
+        max-width: 60%;
+        /* margin: 50px; */
+    }
+
+  }

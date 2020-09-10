@@ -15,14 +15,15 @@ const AboutPage = ({data, pageContext}) => {
     return(
         <>
             <Layout>
-              <div className={style.contactDetails}>
-              {documentToReactComponents(aboutContent.contact.json)}
-              </div>
+              
               <div className={style.container}>
                     <Img fluid={aboutContent.image.fluid} alt={aboutContent.title} style={{'height':'100%'}}  imgStyle={{objectFit: 'contain', 'height':'100%'}} /> 
                   <div className={style.slide}>
                     <div className={style.aboutText}> {documentToReactComponents(aboutContent.text.json)} </div>
                   </div>
+              </div>
+              <div className={style.contactDetails}>
+                {documentToReactComponents(aboutContent.contact.json)}
               </div>
             </Layout>
         </>

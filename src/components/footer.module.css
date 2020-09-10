@@ -1,7 +1,12 @@
 @media screen and (--viewport-narrow-max) {
     .siteFooter{
         display: flex;
+        /* position: relative;  */
+        /* bottom: 0px;
+        left: 0px; */
+        /* transform: translateY(-50%); */
         justify-content: center;
+        
     }
 
   }
