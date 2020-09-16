@@ -69,7 +69,7 @@ export default CollectionIndex
 
 export const query = graphql`
   query($subject: String!, $skip: Int!, $limit: Int!) {
-        singleItem: allContentfulPost(filter: {collection: {in: [$subject]}}
+        singleItem: allContentfulPost( sort: {fields: order} filter: {collection: {in: [$subject]}}
         skip: $skip
         limit: $limit
         ) {
