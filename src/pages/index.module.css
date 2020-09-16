@@ -1,0 +1,28 @@
+.info{
+    position: absolute; 
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width:24vw;
+    max-width: 24vw;
+
+    /* float: left; */
+    /* width: 100%; */
+    /* height: 40vh; */
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.info h1{
+    font-weight: 700;
+    font-size: 18pt;
+    
+  }
+.info h2{
+font-size: small;
+font-weight: 200;
+color: var(--grey);
+
+}
