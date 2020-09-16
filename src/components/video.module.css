@@ -7,14 +7,15 @@
 
 .playButton {
     position: absolute;
+    font-size: 24pt;
     color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 .playButton:hover{
-    opacity: 0.8;
+    opacity: 1;
 }
