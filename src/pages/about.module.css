@@ -47,6 +47,10 @@
     display: block;
 }
 
+.container p{
+    font-size: 9pt;
+}
+.container h1{font-size: 14pt;}
 .contactDetails {
     position: absolute; 
     background-color: white;
