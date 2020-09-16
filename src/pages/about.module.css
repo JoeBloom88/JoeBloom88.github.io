@@ -24,7 +24,10 @@
     max-height: 80vh;
     overflow: hidden;
   }
-
+.container p {
+    padding-bottom: 0;
+    margin: 3px 0 3px 0;
+}
 .imgContainer {
     position: relative;
     /* height: 100vh; */
@@ -36,6 +39,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    margin-bottom: 5vh;
 }
 
 .slide {
@@ -50,9 +54,13 @@
 .contactDetails {
     position: absolute; 
     background-color: white;
-    bottom: 50px;
-    left: 50px;
+    bottom: 0;
+    left: 0;
     max-width: 24vw;
+    padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     
 }
 
