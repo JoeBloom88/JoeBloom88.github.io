@@ -47,10 +47,6 @@
     display: block;
 }
 
-.container p{
-    font-size: 9pt;
-}
-.container h1{font-size: 14pt;}
 .contactDetails {
     position: absolute; 
     background-color: white;
@@ -60,11 +56,21 @@
     
 }
 
+@media screen and (--viewport-narrow-min) {
+        
+    .container p{
+        font-size: 9pt;
+    }
+    .container h1{font-size: 14pt;}
+}
 @media screen and (--viewport-narrow-max) {
     .container{
+        height: fit-content;
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
+        max-height: fit-content;
+        
     }
     .contactDetails{
         position: relative; 
