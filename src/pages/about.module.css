@@ -10,34 +10,49 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     overflow: scroll; */
-    height: fit-content;
+    height: 100vh;
+    
     /* width:100%; */
-    position: relative;
+    /* position: relative; */
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
     -webkit-column-gap: 5px;
     -moz-column-gap: 5px;
-    column-gap: 50px; /* Specifying Column Gap */
+    column-gap: 15%; /* Specifying Column Gap */
     margin: 50px;
+    max-height: 80vh;
+    overflow: hidden;
   }
 
-.slide{
-    /* padding: 50px; */
-    /* display: flex;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; */
+.imgContainer {
+    position: relative;
+    /* height: 100vh; */
+    display: block;
+    float: left;
+    width: 100%;
+    height: 40vh;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
+.slide {
+    height:100%;
+}
+.aboutText {
+    position: relative;
+    height: 100%;
+    display: block;
+}
 
 .contactDetails {
     position: absolute; 
     background-color: white;
     bottom: 50px;
     left: 50px;
-    max-width: 25vw;
+    max-width: 24vw;
     
 }
 

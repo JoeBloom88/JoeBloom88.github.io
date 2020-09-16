@@ -18,7 +18,7 @@ const Video = ({ videoSrcURL, videoPlaceholderImage}) => {
         
             {!openState && 
             <>
-                <Img className={style.videoPlaceholderImage} fluid={videoPlaceholderImage.fluid} alt={videoPlaceholderImage.description} style={{'height':'100%', 'width':'100%'}} imgStyle={{ objectFit: 'cover', 'height':'100%', 'width':'100%'}} />
+                <Img className={style.videoPlaceholderImage} fluid={videoPlaceholderImage.fluid} alt={videoPlaceholderImage.description} style={{'height':'100%', 'width':'100%'}} imgStyle={{ objectFit: 'contain', 'height':'100%', 'width':'100%'}} />
                 <h2 className={style.playButton} onClick={()  =>setOpenState(!openState)} > play </h2>
                 </>
             }
