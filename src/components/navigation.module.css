@@ -1,3 +1,7 @@
+
+.navMain {
+  padding: 25px 50px 10px 50px;
+}
 .navMain ul {
     display: flex;
     flex-direction: column;
@@ -30,6 +34,7 @@
   } */
   .navSmall{
     z-index: 100;
+    padding: 25px 50px 10px 50px;
 
   }
   .navSmall ul {
@@ -59,6 +64,10 @@
     /* color: black; */
     padding-left: 0; 
     z-index: 100;
+    /* padding: 50px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; */
   }
 
 
@@ -72,7 +81,8 @@
     padding:10px 10px 10px 10px;
     background-color: white;
     visibility: visible;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    /* width: fit-content; */
     z-index: 100;
     text-align: right;
   }
@@ -81,6 +91,7 @@
     background-color: white;
     text-align: right;
     cursor: pointer;
+    min-width: 120px;
     
   }
 
