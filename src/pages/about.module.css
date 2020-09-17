@@ -63,7 +63,10 @@
     -moz-box-sizing: border-box;
     
 }
-
+.contactDetails p{
+    padding-bottom:0;
+    /* max-font-size:20px; */
+}
 @media screen and (--viewport-narrow-min) {
         
     .container p{
@@ -87,5 +90,6 @@
         max-width: 60%;
         /* margin: 50px; */
     }
+    
 
   }
