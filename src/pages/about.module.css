@@ -69,7 +69,8 @@
     .container p{
         font-size: 9pt;
     }
-    .container h1{font-size: 14pt;}
+    .container h1{
+        font-size: 14pt;}
 }
 @media screen and (--viewport-narrow-max) {
     .container{

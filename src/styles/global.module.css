@@ -28,3 +28,8 @@
   @custom-media --viewport-narrow-min (min-width: 40rem);
   @custom-media --viewport-wide (min-width: 60rem);
   
+
+body h1 { font-size: 24pt;}
+body h2 { font-size: 18pt;}
+body p { font-size: 14pt;}
+  
