@@ -19,7 +19,7 @@
     column-count: 2;
     -webkit-column-gap: 5px;
     -moz-column-gap: 5px;
-    column-gap: 15%; /* Specifying Column Gap */
+    column-gap: 5%; /* Specifying Column Gap */
     margin: 50px;
     max-height: 80vh;
     overflow: hidden;
