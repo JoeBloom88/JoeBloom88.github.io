@@ -72,11 +72,7 @@
 
 
   
-  .navSmall a:hover {
-    /* text-decoration: underline; */
-    /* text-shadow: 0.5px 0.5px black ; */
-    /* font-weight: lighter; */
-  }
+
   .dropDownMenu{
     padding:10px 10px 10px 10px;
     background-color: white;
