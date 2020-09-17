@@ -70,10 +70,10 @@
 @media screen and (--viewport-narrow-min) {
         
     .container p{
-        font-size: 9pt;
+        font-size: 6pt;
     }
     .container h1{
-        font-size: 14pt;}
+        font-size: 12pt;}
 }
 @media screen and (--viewport-narrow-max) {
     .container{
