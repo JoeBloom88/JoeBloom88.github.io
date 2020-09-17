@@ -63,9 +63,7 @@
     -moz-box-sizing: border-box;
     
 }
-.contactDetails h1{
-    font-size: 13pt;
-}
+
 .contactDetails p{
     padding-bottom:0;
     /* max-font-size:20px; */
@@ -77,7 +75,11 @@
     }
     .container h1{
         font-size: 13pt;}
+    .contactDetails h1{
+        font-size: 13pt;
+    }
 }
+
 @media screen and (--viewport-narrow-max) {
     .container{
         height: fit-content;
