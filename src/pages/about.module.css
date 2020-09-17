@@ -63,6 +63,9 @@
     -moz-box-sizing: border-box;
     
 }
+.contactDetails h1{
+    font-size: 13pt;
+}
 .contactDetails p{
     padding-bottom:0;
     /* max-font-size:20px; */
