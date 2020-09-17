@@ -26,9 +26,9 @@
 body h1 { font-size: 34px;}
 body h2 { font-size: 18px;}
 body p { font-size: 14px;}
-/* 
+
 @custom-media --viewport-narrow-max (max-width: 40rem);
 @custom-media --viewport-narrow-min (min-width: 40rem);
 @custom-media --viewport-wide (min-width: 60rem);
   
- */
+
