@@ -22,6 +22,10 @@
   padding: 50px 50px 0px 50px;
 
 }
+.mediaItem h2{
+  font-size: 14pt;
+
+}
 .mobileMediaContainer{
   position: relative;
   padding-bottom: 20px;
