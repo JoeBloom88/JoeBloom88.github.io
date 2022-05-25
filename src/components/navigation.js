@@ -10,7 +10,8 @@ const MainNav = ({ menuLinks, externalLinks }) => {
     <>
     <nav className={style.navMain}>
       <ul>
-        {menuLinks.map(props => (
+        {menuLinks.sort((a,b)=>
+        a.fieldValue =="Paintings"? -1 : 0).map(props => (
           <li key={props.fieldValue}>
             <Link to={`/${_.kebabCase(props.fieldValue)}`} className={style.navItem}>{props.fieldValue}</Link>
           </li>
