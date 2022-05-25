@@ -12,8 +12,9 @@ const IndexPage = ({data}) => {
   <>
   <Layout>
     <SEO title="Home" />
+    {/*
     <div className={style.mediaContainer}>
-      <video src={"https:"+ homeContent.film.file.url} loop muted autoPlay controls  > </video>
+     *<video src={"https:"+ homeContent.film.file.url} loop muted autoPlay controls  > </video>
   </div>
     <div className={style.info}>
       <h1> {homeContent.title}   </h1>
@@ -22,7 +23,7 @@ const IndexPage = ({data}) => {
 
 
     </div>
-   
+   */}
   </Layout>
   </>
   )

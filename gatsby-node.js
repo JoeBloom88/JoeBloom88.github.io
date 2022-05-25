@@ -77,9 +77,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         items: nodes, // An array of objects
         itemsPerPage: 1, // How many items you want per page
         pathPrefix: `/${_.kebabCase(fieldValue)}`, // Creates pages like `/blog`, `/blog/2`, etc
+        //pathPrefix: `/${_.kebabCase(((fieldValue == "Paintings") ? '' : fieldValue))}`, // Creates pages like `/blog`, `/blog/2`, etc
         component: path.resolve(`./src/templates/collection.js`), // Just like `createPage()`
         context: { subject: fieldValue },
       })
     })
+
+    const { createRedirect } = actions
+    createRedirect({
+      fromPath: '/',
+      toPath: '/paintings',
+      isPermanent: true,
+      redirectInBrowser: true,
+   })
   }
   
